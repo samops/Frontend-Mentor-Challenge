@@ -1,0 +1,85 @@
+/* Global Features */
+*::before,
+*::after,
+*  {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Outfit, sans-serif;
+    scroll-behavior: smooth;
+    color: var(--neutral-Dark-Charcoal);
+    background-color: var(--neutral-Eggshell);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img  {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+/* End Global Features */
+/* Variables */
+:root {
+    /* Colors */
+    --primary-Nutmeg: hsl(14, 45%, 36%);
+    --primary-dark-raspberry: hsl(14, 45%, 36%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Rose-White: hsl(330, 100%, 98%);
+    --neutral-Eggshell: hsl(30, 54%, 90%);
+    --neutral-Light-Grey: hsl(30, 18%, 87%);
+    --neutral-Wenge-Brown: hsl(30, 10%, 34%);
+    --neutral-Dark-Charcoal: hsl(24, 5%, 18%);
+    /* Font Size */
+    --fs-body: 1rem; /* 16 px */
+}
+/* End Variables */
+/* Typography */
+h1, h2 {
+    font-family: 'Young Serif', serif;
+}
+h1 {
+    color: var(--neutral-Dark-Charcoal);
+}
+h2 {
+    color: var(--primary-Nutmeg);
+}
+h3 {
+    font-family: Outfit, sans-serif;
+}
+
+strong {
+    font-weight: 700; 
+}
+
+ol li::marker {
+    color: var(--primary-Nutmeg);
+}
+table {
+    border-collapse: collapse;
+}
+tr {
+    border-bottom: 1px solid var(--neutral-Light-Grey);
+}
+td {
+    padding: 1.5em 1.9em;
+}
+span > strong {
+    color: var(--primary-dark-raspberry);
+}
+/* Styling */
+.container {
+    max-width: 100%;
+    width: 760px;
+    background-color: var(--neutral-White);
+    border-radius: 10px;
+    padding: 50px;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--neutral-Light-Grey);
+    padding: 10px 10px;
+}
